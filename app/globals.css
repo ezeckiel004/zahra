@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
+@theme {
+  --color-cream: #F9F6EF;
+  --color-cream-soft: #F4EFE6;
+  --color-cream-card: #EFE8DC;
+  --color-cream-elevated: #FFFFFF;
+  
+  --color-brown: #4B2E2B;
+  --color-brown-muted: #735653;
+  --color-brown-light: #94726F;
+  --color-brown-dark: #2B1513;
+
+  --color-pink-soft: #E7B8C2;
+  --color-pink-light: #FAF0F3;
+  --color-pink-tint: #F3D3DB;
+
+  --color-rose-dark: #A8606F;
+  --color-rose-deep: #803848;
+
+  --color-gold: #D4AF37;
+  --color-gold-light: #F5E8BA;
+  --color-gold-dark: #B38E22;
+
+  --font-serif: var(--font-cormorant), Georgia, Cambria, serif;
+  --font-sans: var(--font-manrope), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F9F6EF;
+  --foreground: #4B2E2B;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F9F6EF;
+  color: #4B2E2B;
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #E7B8C2;
+  color: #4B2E2B;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 3px;
+}
+
+/* Editorial Serif utility */
+.font-editorial {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+/* Gold shimmer border styling */
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.border-brown-subtle {
+  border-color: rgba(75, 46, 43, 0.15);
+}
+
+/* Delicate background patterns */
+.bg-subtle-mesh {
+  background-image: radial-gradient(circle at 100% 0%, rgba(231, 184, 194, 0.18) 0%, transparent 45%),
+                    radial-gradient(circle at 0% 100%, rgba(212, 175, 55, 0.10) 0%, transparent 40%);
+}
+
+.bg-dark-mesh {
+  background-image: radial-gradient(circle at 80% 20%, rgba(168, 96, 111, 0.22) 0%, transparent 50%),
+                    radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.12) 0%, transparent 50%);
+}
+
+/* Respect user's reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
