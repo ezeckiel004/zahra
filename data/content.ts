@@ -401,7 +401,7 @@ export const FAQ_ITEMS: FAQItem[] = [
     id: "faq-2",
     question: "Quel est l'âge des participantes ?",
     answer:
-      "Le programme s'adresse principalement aux jeunes filles âgées de 13 à 19 ans. Selon les promotions, des cohortes par tranches d'âge homogènes sont constituées pour assurer une parfaite pertinence des échanges et des ateliers.",
+      "Le programme est ouvert à toute personne désireuse d'apprendre, de mieux se connaître, de développer sa confiance et de construire son avenir. Des cohortes adaptées sont organisées afin d'assurer des échanges harmonieux et pertinents.",
   },
   {
     id: "faq-3",

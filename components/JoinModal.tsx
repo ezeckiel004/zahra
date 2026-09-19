@@ -185,11 +185,10 @@ export default function JoinModal({ isOpen, onClose }: JoinModalProps) {
                       </label>
                       <input
                         type="number"
-                        min="12"
-                        max="25"
+                        min="1"
                         value={age}
                         onChange={(e) => setAge(e.target.value)}
-                        placeholder="Ex: 16 ans"
+                        placeholder="Votre âge"
                         className="w-full px-4 py-2.5 rounded-xl bg-white border border-[#4B2E2B]/15 focus:border-[#D4AF37] focus:outline-none text-sm text-[#4B2E2B]"
                       />
                     </div>
