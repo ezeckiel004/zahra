@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://zahra-programme.org/sitemap.xml",
+    sitemap: "https://zahra-ten-mu.vercel.app/sitemap.xml",
   };
 }

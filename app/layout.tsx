@@ -50,6 +50,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/images/zahra-logo.jpeg", type: "image/jpeg" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: ["/images/zahra-logo.jpeg"],
+    apple: [
+      { url: "/images/zahra-logo.jpeg", sizes: "180x180", type: "image/jpeg" },
+    ],
+  },
   openGraph: {
     title: "Zahra — Grandir, comprendre, oser, construire",
     description:
