@@ -10,7 +10,6 @@ import JourneySection from "@/components/JourneySection";
 import MethodSection from "@/components/MethodSection";
 import TransformationSection from "@/components/TransformationSection";
 import CommunitySection from "@/components/CommunitySection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCTA from "@/components/FinalCTA";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
@@ -55,10 +54,7 @@ export default function Home() {
         {/* Section 9: Communauté & Mentorat */}
         <CommunitySection onOpenJoin={handleOpenJoin} />
 
-        {/* Section 10: Témoignages */}
-        <TestimonialsSection />
-
-        {/* Section 11: CTA Final */}
+        {/* Section 10: CTA Final */}
         <FinalCTA onOpenJoin={handleOpenJoin} />
 
         {/* Section 12: FAQ */}
